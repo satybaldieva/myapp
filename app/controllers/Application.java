@@ -28,7 +28,7 @@ public class Application extends Controller {
 
     public static void savePerson(Person person) {
         System.out.println(person.name+" "+person.surname + " "+person.middleName);
-        person.name = "New name";
+        person.name = "Git User Name";
         render(person);
     }
 }
