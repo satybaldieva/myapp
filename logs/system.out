@@ -1,0 +1,5 @@
+Listening for transport dt_socket at address: 8000
+11:25:38,233 INFO  ~ Starting C:\Users\user\programming\my-first-app
+11:25:42,623 WARN  ~ You're running Play! in DEV mode
+11:25:43,597 INFO  ~ Listening for HTTP on port 9000 (Waiting a first request to start) ...
+~ Server is up and running

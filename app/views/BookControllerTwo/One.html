@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Action</th>
+        </tr>
+        #{list items: listOfMyBooks, as:'oneBook'}
+            <tr>
+                <td>${oneBook.title}</td>
+                <td>${oneBook.author}</td>
+                <td><a href="@{BookControllerTwo.two(oneBook)}">Info</a></td>
+            </tr>
+        #{/list}
+    </table>
+</body>
+</html>

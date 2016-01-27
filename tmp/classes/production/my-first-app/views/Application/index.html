@@ -1,0 +1,84 @@
+#{extends 'main.html' /}
+#{set title:'Home' /}
+
+<!--#{if name == 'Timur'}-->
+    <!--<h4>OK</h4>-->
+<!--#{/if}-->
+<!--#{else}-->
+    <!--<h4>WRONG</h4>-->
+<!--#{/else}-->
+<!--<hr>-->
+
+
+<!--#{list items:students, as:'student'}-->
+    <!--<h4>STUDENT IS: ${student}</h4>-->
+<!--#{/list}-->
+<!--<hr>-->
+<!--${name} ${students.get(0)}-->
+<!--<h1> Hello, ${name}</h1>-->
+
+
+<!--<hr>-->
+
+
+<!--%{int i = 0;}%-->
+<!--%{out.println(i)}%-->
+
+<!--<form method="post" action="@{test.FirstApp()}">-->
+    <!--<p><b>Пожалуйста введите ваше имя</b></p>-->
+    <!--<input type="text" name="name"/>-->
+    <!--<script>-->
+        <!--function show_alert {-->
+          <!--alert("Hello!");-->
+        <!--}-->
+<!--</script>-->
+
+    <!--<input type="submit" value="Go" onclick="show_alert();">-->
+
+
+
+
+<!--</form>-->
+<!--<hr>-->
+<!--<form method="post" action="@{Application.savePerson()}">-->
+    <!--<input type="text" name="person.name"/>-->
+    <!--<input type="text" name="person.surname"/>-->
+    <!--<input type="submit" value="Save"/>-->
+<!--</form>-->
+
+
+<form method="post" action="@{BookController.SecondTask()}">
+<p><b>Information about book</b></p>
+<!--<input type="text" name="name"/>-->
+<input type="submit" value="Go" onclick="show_alert();">
+
+
+
+
+</form>
+
+<form method = "post" action="@{BookController.SecondTask}">
+    <table border="1" style="width:30%">
+      <tr>
+          <td>Title</td></td>
+          <td>Harry Potter and the Prizoner of Azkaban</td>
+      </tr>
+        <tr>
+            <td>Author</td></td>
+            <td>Joanne Rowlling</td>
+    </tr>
+        <tr>
+            <td>PublishedYear</td></td>
+            <td>08.07.1999</td>
+        </tr>
+        <tr>
+            <td>ISRN</td></td>
+            <td>104441994</td>
+        </tr>
+        <tr>
+            <td>PageCount</td></td>
+            <td>500</td>
+        </tr>
+ </table>
+</form>>
+
